@@ -22,11 +22,13 @@ public class MainZoo {
         for(Animal a : animales){
             
             if(a instanceof Mascota){
+                System.out.println(a.getClass().getSimpleName());
                 ((Mascota) a).jugar();
             }
-            
+            System.out.println(a.getClass().getSimpleName());
             a.hacerSonido();
             a.moverse();
         }
     }
 }
+
